@@ -40,10 +40,28 @@ https://serverest.dev/
 ```
 src/test/java
 │
+├── docs/
+│   ├── README.md
+│   ├── strategy.md
+│
+├── helpers/
+│   ├── dataGenerator.js
+│
+├── runners/
+│   ├── TestRunner.java
+│
 ├── schemas/
 │   ├── userSchema.json
 │
 ├── users/
+│   ├── flujo/
+│   │   ├── userFlow.feature
+│
+│   ├── negativo/
+│   │   ├── createUserNegative.feature
+│   │   ├── deleteUserNegative.feature
+│   │   ├── getUserNotFound.feature
+│
 │   ├── positivo/
 │   │   ├── createUser.feature
 │   │   ├── getUsers.feature
@@ -51,14 +69,6 @@ src/test/java
 │   │   ├── updateUser.feature
 │   │   ├── deleteUser.feature
 │
-│   ├── negativo/
-│   │   ├── createUserNegative.feature
-│   │   ├── deleteUserNegative.feature
-│   │   ├── getUserNotFound.feature
-│
-│   ├── userFlow.feature
-│   └── TestRunner.java
-
 └── karate-config.js
 ```
 
